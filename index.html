@@ -31,7 +31,8 @@
             <label for="city">City</label>
             <input type="text" id="city" name="city" />
             <label for="state">State</label>
-            <select name="state" id="state">
+            <input type="text" id="state" name="state" list="state-list" />
+            <datalist id="state-list">
               <option value="AK">Alaska</option>
               <option value="AK">Alaska</option>
               <option value="AZ">Arizona</option>
@@ -83,7 +84,7 @@
               <option value="WV">West Virginia</option>
               <option value="WI">Wisconsin</option>
               <option value="WY">Wyoming</option>
-            </select>
+            </datalist>
             <label for="zip">Zip Code</label>
             <input type="text" id="zip" name="zip" />
           </div>
@@ -93,7 +94,13 @@
           <legend>Your Preferences</legend>
           <h3>Choose your location</h3>
           <div>
-            <input type="radio" id="aruba" name="location" value="Aruba" />
+            <input
+              type="radio"
+              id="aruba"
+              name="location"
+              value="Aruba"
+              checked
+            />
             <label for="aruba">Aruba</label>
           </div>
           <div>
@@ -130,6 +137,7 @@
               id="sauna"
               name="extras"
               value="Sauna Access"
+              checked
             />
           </div>
           <div>
@@ -139,6 +147,7 @@
               id="hottub"
               name="extras"
               value="In-Room Hot Tub"
+              checked
             />
           </div>
           <div>
@@ -148,6 +157,7 @@
               id="ocean"
               name="extras"
               value="Ocean View"
+              checked
             />
           </div>
           <div>
@@ -157,6 +167,7 @@
               id="all-inclusive"
               name="extras"
               value="All-Inclusive"
+              checked
             />
           </div>
         </fieldset>
