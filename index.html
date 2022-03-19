@@ -36,6 +36,18 @@
           />
           <label for="age">Your Age</label>
           <input type="number" id="age" name="age" min="21" max="120" />
+          <label
+            >Your Secret Code (must be 6 alphanumeric characters)
+            <span class="required-field">*</span>
+          </label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            title="6 Alphanumeric Character Passcode"
+            pattern="[0-9A-Za-z]{6}"
+            required
+          />
           <h5>21 and older to enter</h5>
         </div>
         <fieldset>
@@ -109,7 +121,13 @@
               <option value="WY">Wyoming</option>
             </datalist>
             <label for="zip">Zip Code</label>
-            <input type="number" id="zip" name="zip" />
+            <input
+              type="text"
+              id="zip"
+              name="zip"
+              pattern="[0-9]{5}"
+              title="5-Digit US Zip Code"
+            />
           </div>
         </fieldset>
 
